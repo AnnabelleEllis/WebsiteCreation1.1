@@ -1,0 +1,242 @@
+/*Global Styles*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*This is the link that helps with scrollbars
+  https://gist.github.com/devinrhode2/2573411*/
+
+body::-webkit-scrollbar{
+	width: 1rem;
+}
+
+body::-webkit-scrollbar-track{
+	/*background: white;*/
+	background: #131c27;
+}
+
+body::-webkit-scrollbar-thumb{
+	/*background: linear-gradient(#FFFFFF,#131c27);*/
+	/*background:white;*/
+	background:rgba(255,255,255,0.2);
+	-webkit-border-radius: 150px;
+}
+
+h1{
+	font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p{
+	font-size: 2rem;
+}
+
+h2{
+	font-size: 4.8rem;
+}
+
+h3{
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+h4,
+h5{
+	font-size: 2.8rem;
+}
+
+button{
+	padding: 1rem 2.5rem;
+ 	border-radius: 10px;
+	border: none;	
+ 	color: #131c27;
+ 	transition: background 0.3s ease-in-out;
+}
+
+ button:hover{
+ 	cursor: pointer;
+ 	color: white;
+ 	background: #131c27;
+ 	border-radius: 10px;
+ 	border:1px solid white;
+ }
+/*Nav Section With HERO*/
+
+.main-head{
+	background:#131c27;
+	color: white;
+}
+
+nav{
+	margin: auto;
+	min-height: 10vh;
+	padding: 10px;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#logo{
+	font-size: 3.6rem;
+	font-family: 'Pattaya', sans-serif;
+	font-weight: normal;
+}
+
+div.option-1{
+	flex: 1 1 40rem;
+}
+
+div.option-2{
+	flex: 1 1 40rem;
+}
+
+ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+}
+
+/*The HERO Section*/
+
+
+.hero{
+	background: linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/landing-page.jpg") ;
+	min-height: 90vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hero h3{
+	padding: 3rem;
+}
+
+/*The Benefits Section*/
+
+.location{
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/new-york-page.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;  
+	position: relative;
+	overflow: hidden;
+}
+
+.location-head{
+	font-size: 1rem;
+	/*text-shadow: 2px 2px #FFFFFF;*/
+	width: 90%;
+	margin: auto;
+}
+
+.location-head h2{
+	font-size: 3rem;
+	text-decoration:underline;
+	font-weight: bolder;
+
+}
+.location-head h3{
+	font-size: 2rem;
+	font-weight: normal;
+	/*text-shadow: px 1px #663b34;*/
+	/*Background colour of text to change*/
+	/*#131c27*/
+	background: linear-gradient(#663b34,#ff0000,#663b34);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.cloud{
+	position:absolute;
+	top: 0%;
+	right: 0%;
+	max-height: 80vh;
+	animation: cloudAnimation 6s infinite alternate ease-in-out;
+}
+
+.moving-cloud-1{
+	opacity: 0.6;
+	/*max-height: 100vh;*/
+	/*animation: cloudAnimation 3s infinite alternate ease-in-out;*/
+}
+
+.moving-cloud-2{
+	top: 20%;
+	z-index: -1;
+	opacity: 0.1;
+	/*max-height: 80vh;*/
+}
+
+/*Add this animation to the elemet class or id 
+	animation: cloudAnimation 2s infiite alternate 2s;
+	or 
+	aminatio: cloudAnimation forward;
+*/
+
+@keyframes cloudAnimation{
+	/* Percentages can be used.
+	0%{
+
+	}
+
+	25%{
+	
+	}
+
+	100%{
+
+	}*/
+
+	from{
+		transform: translate(10%,-10%);
+	}
+
+	to{
+		transform: translate(0%,0%);
+	}
+}
+
+/*Media Query*/
+
+@media screen and (max-width:910px){
+	html{
+		font-size: 	45%;
+	}
+	nav{
+		text-align: center;
+		padding: 	1rem;
+	}
+
+	#logo{
+		padding: 2rem;
+	}
+}
