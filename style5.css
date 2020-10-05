@@ -137,6 +137,28 @@ li a{
 	padding: 3rem;
 }
 
+/*Float Nav Section*/
+
+.float-nav{
+	position: fixed;
+	top: 25%;
+	z-index: 1;
+	right: 0rem;
+	background: none;
+	margin: 1rem;
+}
+
+.float-nav a button{
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+	font-size: 1rem;
+	margin: 1rem auto;
+	/*max-width: 5%;*/
+	/*justify-content: center;*/
+}
+
+
 /*The Benefits Section*/
 
 #location{
