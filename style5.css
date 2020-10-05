@@ -225,6 +225,126 @@ li a{
 	}
 }
 
+/*Benefits Section*/
+
+
+.benefits-head{
+	background: #343c44;
+	padding: 3rem;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+.benefits-head{
+	padding: 1rem;
+}
+
+.cards{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	min-height: 70vh;
+	align-items: center;
+	/*flex-wrap: wrap;*/
+}
+
+
+.card{
+	/*background: lightcoral;*/
+	flex:1 1 25rem;
+	min-height: 50vh;
+	margin: 2rem 5rem;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1),0px 20px 20px rgba(0,0,0,0.1);
+	text-align: center;
+}
+
+.cards img{
+	/*height: 100px;*/
+	max-width: 15%;
+	margin: 2rem;
+}
+
+.card-icon{
+	background: #131c27;
+}
+
+/*Contact Section*/
+
+#contact{
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/contact-mountain.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-wrapper{
+	background: rgba(19,28,39,0.8);
+	width: 60%;
+	color: white;
+	border-radius: 20px;
+	border: 1px white solid;
+}
+
+.form-head{
+	text-align: center;
+	padding: 4rem;
+}
+
+.name-form,
+.email-form{
+	text-align: center;
+	padding: 0rem 2rem 2rem 2rem;
+}
+
+.form-wrapper label{
+	margin: 0rem 3rem;
+}
+
+
+.form-wrapper button{
+	margin: 0 auto 2rem auto;
+    display: block;
+}
+
+
+.form-wrapper input{
+	padding: 1rem 3rem;
+	/*width: 10px;*/
+}
+
+
+/*Footer*/
+
+footer{
+	color: white;
+	background: rgba(19,28,39,1); 
+}
+
+.footer-wrapper{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+	padding: 2rem;
+	min-height: 10vh;
+	/*flex-wrap: wrap;*/
+}
+
+footer h5{
+	flex: 1 1 40rem;
+}
+footer ul{
+	flex: 1 1 40rem;
+	align-items: center;
+}
+
 /*Media Query*/
 
 @media screen and (max-width:910px){
@@ -239,4 +359,62 @@ li a{
 	#logo{
 		padding: 2rem;
 	}
+	
+	.moving-cloud-1{
+		z-index: -1;
+	}
+
+	.moving-cloud-2{
+		z-index: -2;
+
+	}
+
+	.location-head h2{
+		text-align: center;
+		padding-bottom: 5px;
+
+	}
+
+	.location-head h3{
+		/*color: black;*/
+		background: rgb(78,25,32);
+		/*rgba(19,28,39, 0.5);*/
+		-webkit-text-fill-color: white;
+		text-align: center;
+		/*-webkit-background-clip: text;*/
+  		/*-webkit-text-fill-color: transparent;*/
+	}
+}
+
+@media screen and (max-width:650px){
+
+	.cards{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.form-head h2{
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.form-wrapper input{
+	padding: 0.5rem 1rem;
+	width: 50%;
+	}
+}
+
+
+@media screen and (max-width:350px){
+	.form-wrapper label{
+		/*margin: 0rem 3rem;*/
+		/*display: block;*/
+	}
+
+	.form-wrapper input{
+		/*padding: 1rem 3rem;*/
+		/*width: 10px;*/
+		/*display: block;*/
+	}
+
 }
